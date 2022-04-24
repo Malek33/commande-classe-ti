@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>ex2</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+</head>
+<body>
+    <div>
+        <fieldset>
+            <legend>Bon de Commande</legend>
+            <table>
+                <tr>
+                    <td>Nom et prénom</td>
+                    <td><input id="name" type="text"></td>
+                </tr>
+                <tr>
+                    <td>Date de commande</td>
+                    <td><input type="date" name="" id="date"></td>
+                </tr>
+                <tr>
+                    <td>Produit</td>
+                    <td>
+                        <div class="form-group">
+                            <label for=""></label>
+                            <select class="custom-select" name="" id="produit">
+                                <option selected>Choisir un produit</option>
+                                <option  value="scanner">Scanner</option>
+                                <option value="imprimante laser">Imprimante Laser</option>
+                                <option value="webcam">Webcam</option>
+                                <option value="souris">Souris</option>
+                            </select>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Quantité à commander</td>
+                    <td><input id="quanity" type="text"></td>
+                </tr>
+                <tr>
+                    <td><input id="submit" type="button" value="Commander"></td>
+                    <td><input type="button" value="Annuler"></td>
+                </tr>
+            </table>
+        </fieldset>
+    </div>
+    <div id="facture">
+        <fieldset>
+            <legend>Facture</legend>
+            <table>
+                <tr>
+                    <td>Code Client</td>
+                    <td><input id="code" type="text"></td>
+                </tr>
+                <tr>
+                    <td>Nom et prénom</td>
+                    <td><input type="text" name="" id="nameval"></td>
+                </tr>
+                <tr>
+                    <td>Produit</td>
+                    <td><input type="text" id="prodval"></td>
+                </tr>
+                <tr>
+                    <td>Prix Unitaire</td>
+                    <td><input type="text" id="priceuni"></td>
+                </tr>
+                <tr>
+                    <td>Quantité</td>
+                    <td><input id="quanityval" type="text"></td>
+                </tr>
+                <tr>
+                    <td>Montant à Payer</td>
+                    <td><input type="text" id="totalpay"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" value="Imprimer"></td>
+                </tr>
+            </table>
+        </fieldset>
+    </div>
+    <script src='main.js'></script>
+</body>
+</html>
